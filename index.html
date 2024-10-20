@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 1. Metainformation för korrekt teckenuppsättning och kompatibilitet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- 2. Titel för webbsidan -->
     <title>Mohamad Majd Al-Baroudi Portfolio</title>
+
+    <!-- 3. Länk till extern CSS-fil för styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- 4. Navigeringsfält för enkel navigering på sidan -->
    <nav>
     <div class="logo">
         <h2>Mohamad</h2>
     </div>
-    <!-- Hidden Checkbox for Menu Toggling -->
+    
+    <!-- 5. Dold kryssruta för att visa/dölja meny på små skärmar -->
     <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <!-- Label for Hamburger Icon -->
+
+    <!-- 6. Hamburgerikon för meny på mobilversion -->
     <label for="menu-toggle" class="menu-icon">
         <span></span>
         <span></span>
         <span></span>
     </label>
-    <!-- Navigation Links -->
+
+    <!-- 7. Navigeringslänkar för olika sektioner på sidan -->
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -30,33 +38,41 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="#contact" class="cta-button">Let's Talk</a></li>
     </ul>
-</nav>>
+</nav>
 
-   <!-- Hero Section / About Me -->
+   <!-- 8. Hero-sektion som introducerar dig -->
 <section id="about">
     <h1>About Me</h1>
+
+    <!-- 9. Bild på dig -->
     <img src="my-photo-1.jpeg" alt="Mohamad Majd Al-Baroudi's portrait">
+
+    <!-- 10. Presentation av ditt namn och yrke -->
     <h2>Hi, I'm Mohamad Majd Al-Baroudi</h2>
     <h3>Frontend Developer</h3>
+
+    <!-- 11. Kort beskrivning av dina kunskaper och passioner -->
     <p>
         I specialize in creating modern, responsive websites using the latest technologies such as JavaScript, HTML5, CSS, and 3D modeling. I am passionate about building digital solutions that are eco-friendly and user-centric.
     </p>
+
+    <!-- 12. Knappar för att kontakta dig eller se dina projekt -->
     <div>
         <a href="#contact" class="button button-primary">Hire Me</a>
         <a href="#portfolio" class="button button-secondary">See Projects</a>
     </div>
 </section>
 
-   <!-- Portfolio Section -->
+   <!-- 13. Portfoliodel där dina projekt visas -->
 <section id="portfolio">
     <h1>My Projects</h1>
     <div class="projects">
-        <!-- Project Image 1 -->
+        <!-- 14. Bilder på projekt som du har arbetat på -->
         <img src="Gron-val.jpg" alt="Gron Val Project Screenshot" />
-        <img src="Reem-Style.jpg" alt="Reem Style Project Screenshot" />
+     <a href="https://www.reemstyle.com/" target="_blank">
+    <img src="Reem-Style.jpg" alt="Reem Style Project Screenshot" />
+</a>
 
-        <!-- Add more project images here if needed -->
-    </div>
 </section>
 
 
@@ -83,9 +99,10 @@
         <ul>
             <li><a href="#">LinkedIn</a></li>
             <li><a href="#">Twitter</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="https://github.com/Mjdbaroudi" target="_blank">GitHub</a></li>
         </ul>
     </footer>
 
 </body>
 </html>
+
