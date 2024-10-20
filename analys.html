@@ -1,63 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <!-- 1. Meta och titeltaggar för analysen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- 2. Titel på analysen -->
-    <title>Analys av Portfolio-sidan</title>
-
-    <!-- 3. Länk till eventuell CSS-styling för analyssidan -->
+    <title>Analys av Skatteverkets Webbplats</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 4. Huvudrubrik för analyssidan -->
-    <h1>Analys av Portfolio-sidan</h1>
+    <!-- Huvudrubrik -->
+    <h1>Analys av Skatteverkets Webbplats</h1>
 
-    <!-- 5. Inledning med en kort beskrivning av analysen -->
-    <p>Denna sida innehåller en detaljerad analys av min personliga portfolio-sida. Jag kommer att diskutera varje komponent och dess syfte samt tekniska implementering.</p>
+    <!-- Introduktion -->
+    <section>
+        <h2>Introduktion</h2>
+        <p>
+            Skatteverket är en av Sveriges viktigaste myndigheter som ansvarar för hantering av landets skattepolitik samt folkbokföring. Myndighetens webbplats, <a href="https://www.skatteverket.se">www.skatteverket.se</a>, erbjuder en mängd olika tjänster för privatpersoner och företag, från att deklarera inkomst till att lägga till ett nyfött barn i folkbokföringen.
+            Webbplatsen tjänar en mängd olika målgrupper, oavsett om de är företag, privatpersoner eller individer. Användbarhet och design är därför avgörande för att skapa en lyckad användarupplevelse.
+        </p>
+        <p>
+            Denna analys kommer att fokusera på webbplatsens syfte och målgrupp, navigeringsschema, användning av bilder, tillgänglighet och responsivitet, samt relatera detta till användbarhetsteorier från <em>Användbarhetsboken</em> av Tommy Sundström.
+        </p>
+    </section>
 
-    <!-- 6. Första analysdelen: Navigation och Hero-sektionen -->
-    <h2>1. Navigation och Hero-sektion</h2>
-    <p>
-        Min portfolio-sida inleds med en välstrukturerad navigationsmeny. Jag har använt mig av ett <strong>nav</strong>-element för att kapsla in mina navigeringslänkar, vilket följer HTML5-konventioner för semantisk strukturering. Menyn innehåller en hamburgerikon som implementeras genom en dold checkbox och en <strong>label</strong>-tagg för att möjliggöra en responsiv upplevelse, särskilt på mobila enheter.
-    </p>
-    <p>
-        Hero-sektionen, som består av en bild och en kort introduktion om mig själv, använder <strong>h1</strong> till <strong>h3</strong>-taggar för att skapa en tydlig hierarki av rubriker. Denna sektion är kritisk eftersom det är första intrycket besökarna får, och den är utformad för att vara både professionell och engagerande.
-    </p>
+    <!-- Syfte -->
+    <section>
+        <h2>Syfte</h2>
+        <p>
+            Skatteverkets webbplats syftar till att underlätta e-förvaltning av ärenden som rör skatter och folkbokföring. Den erbjuder information, formulär och verktyg för att underlätta dessa processer. Huvudkategorier som "Deklaration", "Skatter" och "Folkbokföring" hjälper användare att snabbt hitta det de söker.
+        </p>
+        <p>
+            Enligt Sundström (2005) är en användbar webbplats en sådan som har ett tydligt syfte och tillför nytta för användaren. Skatteverket uppfyller detta kriterium genom att erbjuda funktioner som direkt möter användarnas behov.
+        </p>
+    </section>
 
-    <!-- 7. Andra analysdelen: Portfolio-sektionen -->
-    <h2>2. Portfolio-sektion</h2>
-    <p>
-        I portföljsektionen visas två av mina projekt med bilder som representerar deras innehåll. Jag har använt <strong>img</strong>-taggar med beskrivande alt-text för att både förbättra SEO och tillgänglighet. Dessutom är varje projektbild omsorgsfullt vald för att visa upp variationen i mina färdigheter, från hållbar utveckling till personlig stil.
-    </p>
-    <p>
-        Denna sektion skulle kunna utökas ytterligare genom att implementera länkar till liveprojekt eller kodbaser för att ge besökarna en djupare inblick i mina tekniska förmågor.
-    </p>
+    <!-- Målgrupp -->
+    <section>
+        <h2>Målgrupp</h2>
+        <p>
+            Webbplatsen är utformad för en bred och heterogen målgrupp, från privatpersoner till företag. Eftersom målgruppen har olika behov och teknisk kompetens, har Skatteverket skapat separata sektioner för privatpersoner, företag och folkbokföring.
+        </p>
+        <p>
+            Enligt Sundström är det viktigt att identifiera målgruppen för att designa webbplatsen på ett effektivt sätt. Webbplatsen tillgodoser olika nivåer av teknisk erfarenhet genom att vara enkel att navigera för nybörjare, men också erbjuda mer avancerade funktioner för företag.
+        </p>
+    </section>
 
-    <!-- 8. Tredje analysdelen: Kontaktsektionen -->
-    <h2>3. Kontaktsektion</h2>
-    <p>
-        Kontaktsektionen använder ett enkelt och effektivt formulär, där <strong>input</strong>- och <strong>textarea</strong>-elementen säkerställer användarvänlig interaktion. Formuläret använder attributet <strong>required</strong> för att se till att nödvändig information alltid fylls i korrekt, vilket förbättrar användarupplevelsen och minimerar fel.
-    </p>
-    <p>
-        Ett förslag för framtida förbättringar skulle vara att implementera server-side validering och dynamisk feedback när användaren fyller i formuläret.
-    </p>
+    <!-- Navigering -->
+    <section>
+        <h2>Navigering</h2>
+        <p>
+            Navigeringen på Skatteverkets webbplats är logisk och välstrukturerad. Huvudmenyn är tydlig och gör det enkelt för användarna att snabbt hitta rätt information. Underkategorier visas när användaren för muspekaren över menyerna, vilket ger en snabb överblick utan att behöva klicka sig in på fel sidor.
+        </p>
+        <p>
+            Sundström (2005) betonar vikten av ordnad information på en webbplats. Sökfunktionen på Skatteverkets webbplats hjälper också användarna att snabbt hitta det de söker.
+        </p>
+    </section>
 
-    <!-- 9. Fjärde analysdelen: Footer och länkar -->
-    <h2>4. Footer och sociala länkar</h2>
-    <p>
-        Sidans footer är enkel men funktionell, med länkar till mina sociala medier. Här har jag använt en <strong>ul</strong>-lista för att strukturera länkarna, vilket ger en semantisk och lättläst kod. Att inkludera mina LinkedIn, Twitter och GitHub-länkar är viktigt för att ge potentiella arbetsgivare och samarbetspartners en direkt väg att kontakta mig.
-    </p>
+    <!-- Bilder -->
+    <section>
+        <h2>Bilder</h2>
+        <p>
+            Få bilder används på webbplatsen, främst ikoner som representerar olika tjänster. Detta är i linje med webbplatsens funktionella och informativa roll. Ikonerna hjälper användarna att snabbt förstå syftet med varje sektion utan att överbelasta dem med grafik.
+        </p>
+        <p>
+            Enligt Sundström (2005) är det första intrycket avgörande för användarens upplevelse. Skatteverket fokuserar på tydlighet och funktionalitet snarare än estetisk design, vilket passar dess målgrupp.
+        </p>
+    </section>
 
-    <!-- 10. Slutsats -->
-    <h2>5. Slutsats</h2>
-    <p>
-        Sammanfattningsvis är min portfolio-sida utformad med användarupplevelse och tillgänglighet i åtanke. Genom att använda modern webbteknik som responsiva menyer och semantisk HTML, har jag skapat en sida som inte bara ser bra ut utan också är funktionell på alla enheter. Det finns potential för ytterligare förbättringar, särskilt i form av interaktivitet och utökad portföljpresentation, men grunden är solid och representerar mina färdigheter väl.
-    </p>
+    <!-- Tillgänglighet -->
+    <section>
+        <h2>Tillgänglighet</h2>
+        <p>
+            Skatteverkets webbplats uppfyller standarder för tillgänglighet, vilket gör att personer med funktionsnedsättningar kan använda den utan problem. Textstorlek kan justeras, och webbplatsen stödjer skärmläsare för synsvaga användare.
+        </p>
+        <p>
+            Enligt Sundström (2005) är tillgänglighet en grundläggande del av användbarhet, och Skatteverket har vidtagit åtgärder för att säkerställa att webbplatsen fungerar för alla, oavsett funktionshinder.
+        </p>
+    </section>
+
+    <!-- Responsivitet -->
+    <section>
+        <h2>Responsivitet</h2>
+        <p>
+            Webbplatsen är responsiv och anpassar sig smidigt till olika enheter, såsom datorer, surfplattor och mobiler. Informationen är lätt att ta till sig även på mindre skärmar, och användaren kan navigera utan problem.
+        </p>
+        <p>
+            Sundström betonar vikten av god interaktionsdesign och att webbplatsen fungerar bra oavsett plattform. Skatteverkets webbplats erbjuder en smidig användarupplevelse oavsett enhet.
+        </p>
+    </section>
+
+    <!-- Slutsats -->
+    <section>
+        <h2>Slutsats</h2>
+        <p>
+            Skatteverkets webbplats är ett utmärkt exempel på en välbalanserad myndighetswebbplats som prioriterar funktionalitet och användbarhet. Genom att erbjuda tydlig struktur, hög tillgänglighet och responsivitet, tillgodoser webbplatsen behoven hos en bred målgrupp. Den uppfyller många av de rekommendationer som anges i teorier om användbarhet och webbdesign.
+        </p>
+    </section>
+
+    <!-- Referenser -->
+    <section>
+        <h2>Referenser</h2>
+        <p>
+            "Användbarhetsboken," anvandbart.se, 2005. [Online]. Available: <a href="https://www.anvandbart.se/ab/">https://www.anvandbart.se/ab/</a>. [Accessed: 16-Sept-2024].
+        </p>
+    </section>
 
 </body>
 </html>
